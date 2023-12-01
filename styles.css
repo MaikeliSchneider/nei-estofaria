@@ -1,0 +1,143 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  strong {
+      color: #333;
+      font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    color: #302c2c;
+  } 
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  footer {
+    background-color: #e92130;
+    display: flex;
+    align-items: center;
+  }
+
+  .static-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e92130;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box; 
+    position: fixed; 
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+
+  .container {
+    display: flex;
+  }
+  
+  .list1, .list2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .list1 li, .list2 li {
+    margin: 20px;
+    padding: 10px;
+  }
+
+
+  .footer {
+    background-color: #333333be;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    margin: 0;
+    color:rgba(255, 255, 255, 0.582)
+  }
+
+  @media (max-width: 768px) {
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  font-size: 0;
+  background-color: rgba(41, 41, 41, 0.432);
+  border: none;
+  cursor: pointer;
+}
+
+.prev::before, .next::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev::before {
+  border-width: 8px 10px 8px 0;
+  border-color: transparent rgba(255, 255, 255, 0.596) transparent transparent;
+}
+
+.next::before {
+  border-width: 8px 0 8px 10px;
+  border-color: transparent transparent transparent rgb(255, 255, 255, 0.596);
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
