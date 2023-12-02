@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e92130;
+    background: linear-gradient(to right, #bebebe, #e92130);
     color: #fff;
     padding: 10px 20px;
     width: 100%;
@@ -52,7 +52,7 @@ body {
   }
   
   .nav-links a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin-left: 20px;
   }
@@ -71,6 +71,16 @@ body {
   .list1 li, .list2 li {
     margin: 20px;
     padding: 10px;
+  }
+
+
+  .listGeneral {
+    display: flex;
+    gap: 20px;
+  }
+
+  .list {
+    padding: 5px;
   }
 
 
